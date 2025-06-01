@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial;
+            padding: 10px;
+            background-image: url(bg.jpeg);
+        }
+
+        .header{
+            padding: 30px;
+            text-align: center;
+            background-image: url(bg2.jpeg);
+        }
+
+        .header h1{
+            font-size: 50px;
+        }
+
+        .topnav{
+            overflow: hidden;
+            background-color: #333;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .topnav a{
+            
+            display: inline-block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover{   
+            background-color: #ddd;
+            color: black;
+        }
+
+        .leftcolum{
+            float: left;
+            width: 75%;
+        }
+
+        .rightcolum{
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+
+        .card{
+            padding: 20px;
+            margin-top: 20px;
+            border: solid 1px black;
+            img{
+                width: 80%;
+                border: solid 1px black;
+            }
+            background-image: url(bg2.jpeg);
+        }
+        .main_card{
+            padding: 20px;
+            margin-top: 20px;
+            border: solid 1px black;
+            img{
+                width: 80%;
+            }
+            background-image: url(bg2.jpeg);
+        }
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .footer{
+            padding: 20px;
+            text-align: left;
+            margin-top: 20px;
+            background-image: url(bg2.jpeg);
+            font-size: 12px;
+            color: #888888;
+        }
+
+        @media screen and (max-width: 800px) {
+            .leftcolum, .rightcolum{
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .topnav a{
+                float: none;
+                width: 100%;
+            }
+        }
+
+        .main img{
+            margin: 10px;
+            width: 225px;
+            height: 225px;
+            background-color: #ddd;
+            border: solid 1px black;
+            border-radius: 5px;
+        }
+
+        .main{
+            display: flex;
+            align-items:top;
+            margin: 10px;
+            padding: 10px;
+            border: solid 1px black;
+            border-radius: 5px;
+        }
+            
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="whisky.png">
+        <p>위스키 입문자를 위한 간단한 소개 페이지</p>
+    </div>
+
+    <div class="topnav">
+        <a href="index.html">홈으로</a>
+        <a href="1.html">테이스팅 노트</a>
+        <a href="2.html">소개</a>
+        <a href="3.html">브랜드</a>
+        <a href="4.html">페어링</a>
+        <a href="5.html">게시판</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolum">
+            <div class="main_card">
+                <h2>어울리는 음식 소개</h2>
+                <p>위스키와 어울리는 음식 몇 가지를 소개해 보도록 하겠습니다.</p>
+                <h2>초콜릿</h2>
+                <div class="main">
+                    <img src="cho.jpeg">
+                    <p>
+                        위스키가 여러 종류가 있듯이 초콜릿도 여러 종류가 있습니다. 다크, 밀크, 화이트, 버터와 생크림을 써서
+                        만드는 생초코릿이라 부르는 파베 초콜릿, 안에 아몬드나 헤이즐넛 등을 갈아 만든 셀 초콜릿 등 많습니다.
+                        대체적으로 개성이 강한 버번위스키나, 싱글몰트위스키에는 다크, 부드러운 맛을 가지고 있는 블렌디드 스카치
+                        혹은 아이리쉬 위스키에는 밀크 그리고 고숙성 위스크 호은 재패니즈 위스키에는 다소 초콜릿 맛이 미세하게 느껴지는
+                        화이트가 잘 어울린다고 합니다. 웬만해서는 초콜릿과 위스키는 잘 어울리지만 부드러운 위스키와 단맛이 강한
+                        초콜릿은 위스키의 풍미를 저하 시킬 수 있으므로 잘 선택해야 합니다. 
+                    </p>
+                </div>
+
+                <h2>치즈</h2>
+                <div class="main">
+                    <img src="che.jpeg">
+                    <p>
+                        치즈도 종류가 수 십 가지인 만큼 매치를 잘 하는 것이 중요헙니다.
+                        체다 치즈는 스모키한 향이나 강한 위스키, 특유의 향이 강한 블루치즈는 스파이시한 향을 가지고 있는 셰리 캐스크
+                        싱글몰트나 라이 위스키, 부드러운 단맛과 감칠맛이 가미되어 있는 브뤼 치즈는 스페이사이드 지역의 싱글몰트나 블렌
+                        디드 스카치 위스키가 잘 어울린다고 합니다. 초콜릿과 치즈의 공통점은 강한 향이 나는 음식과 위스키를 조합해 주는 것이
+                        좋다고 합니다.
+                    </p>
+                </div>
+
+                <h2>스테이크&바베큐</h2>
+                <div class="main">
+                    <img src="bb.jpeg">
+                    <p>
+                        스테이크는 초콜릿, 치즈와 함께 고전적인 위스키 페어링에 손꼽히는 요리입니다. 미국에서는 바베큐를 만들 때 버번 위스키를
+                        바베큐 소스로 사용하는 곳도 있는데, 소스의 단맛과 매콤한 맛은 버번과 라이 위스키와 더할 나위 없이 잘 어울리는 편이고, 
+                        고기의 육즙과 후추의 플레이버가 대체적으로 강한 맛을 가지고 있는 스모키한 위스키들과 굉장히 잘 어울린다고 합니다.
+                    </p>
+                </div>
+
+                <h2>석화</h2>
+                <div class="main">
+                    <img src="oy.jpeg">
+                    <p>
+                        아는 사람들은 다 아는 조합입니다. 겨울 석화 시즌만 되면 인스타그램에 심심치 않기 올라오는 석화와 스모키한 싱글몰트
+                        위스키 조합은 빠질 수 없습니다. 사진의 탈리스커 위스키 증류소는 스카이 섬이라는 곳에서 증류되는데 섬 지역에서 바다
+                        바람을 맞으면서 숙성되기 때문에 바다의 향이 물씬 느껴지는 짠내와 적절하 가지고 있는 스모키함의 밸런스는 어느 싱글
+                        몰트도 따라올 수 없는 독자적인 플레이버를 가지고 있습니다. 탈리스커 뿐만 아니라 아일레이 지역의 아드벡, 라프로익, 
+                        라가불린 같은 위스키와의 조합도 아주 좋다고 합니다.
+                    </p>
+                </div>
+                
+                
+            </div>  
+        </div>
+        <div class="rightcolum">
+            <div class="card">
+                <h2>오늘의 위스키</h2>
+                <div><img src="whisky4.jpeg"></div>
+                <p>글렌피딕 12년<br>판매량 1등 싱글몰트 위스키</p>
+                <p>글렌피딕 12년 위스키는 스코틀랜드 싱글 몰트 위스키의 대표적인 제품으로, 
+                    부드럽고 달콤한..</p>
+            </div>
+            <div class="card">
+                <h3>게시판 인기글</h3>
+                <div><p>위스키 입문 질문 있습니다.+5</p></div>
+                <div><p>이거 가격 괜찮은 가요?+10</p></div>
+                <div><p>요즘 가격이 슬슬 떨어지네요..+12</p></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Blog | Github
+        <br><br>
+        저자 : 이맹규
+        <br>
+        이메일 : lmgyu0522@naver.com
+        <br>
+        Copyright 2025. 이맹규 All rights reserved.
+    </div>
+</body>
+</html>
