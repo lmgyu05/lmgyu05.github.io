@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial;
+            padding: 10px;
+            background-image: url(bg.jpeg);
+        }
+
+        .header{
+            padding: 30px;
+            text-align: center;
+            background-image: url(bg2.jpeg);
+        }
+
+        .header h1{
+            font-size: 50px;
+        }
+
+        .topnav{
+            overflow: hidden;
+            background-color: #333;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .topnav a{
+            
+            display: inline-block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover{   
+            background-color: #ddd;
+            color: black;
+        }
+
+        .leftcolum{
+            float: left;
+            width: 75%;
+        }
+
+        .rightcolum{
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+
+        .card{
+            padding: 20px;
+            margin-top: 20px;
+            border: solid 1px black;
+            img{
+                width: 80%;
+                border: solid 1px black;
+            }
+            background-image: url(bg2.jpeg);
+        }
+        .main_card{
+            padding: 20px;
+            margin-top: 20px;
+            border: solid 1px black;
+            img{
+                width: 80%;
+            }
+            background-image: url(bg2.jpeg);
+        }
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .footer{
+            padding: 20px;
+            text-align: left;
+            margin-top: 20px;
+            background-image: url(bg2.jpeg);
+            font-size: 12px;
+            color: #888888;
+        }
+
+        @media screen and (max-width: 800px) {
+            .leftcolum, .rightcolum{
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .topnav a{
+                float: none;
+                width: 100%;
+            }
+        }
+
+        .main img{
+            margin: 10px;
+            width: 225px;
+            height: 225px;
+            background-color: #ddd;
+            border: solid 1px black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="whisky.png">
+        <p>위스키 입문자를 위한 간단한 소개 페이지</p>
+    </div>
+
+    <div class="topnav">
+        <a href="index.html">홈으로</a>
+        <a href="1.html">테이스팅 노트</a>
+        <a href="2.html">소개</a>
+        <a href="3.html">브랜드</a>
+        <a href="4.html">페어링</a>
+        <a href="5.html">게시판</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolum">
+            <div class="main_card">
+                <h2>위스키 별 맛 특징</h2>
+                <p>위스키의 맛은 매우 다양지만 제가 생각하는 맛을 기준으로 설명을 해볼까 합니다.
+                    우선 3가지로 나누어서 크게 버번위스키, 피트 위스키, 셰리 위스키로 분류가 됩니다.
+                    <ul>
+                        <h3>버번 위스키</h3>
+                        <li>버번위스키는 미국에서 만들어지며 옥수수가 꼭 51%이상을 사용한 원액을 새 참나무 통에서 숙성시켜야한다.</li>
+                        <li>맛은 달콤하고 부드러운 맛이 특징이며, 바닐라, 캐러멜, 견과류 향이 강하게 느껴집니다.</li>
+                        <li>향은 바닐라, 캐러멜, 견과류 향 외에도 과일 향(프루티, 플로럴)이 강조되기도 합니다.</li>
+                        <li>도수는 증류 후 80% 이하로 증류해야 하며, 이를 초과하면 미국법상 보드카로 분류됩니다. </li>
+                    </ul>
+
+                    <ul>
+                        <h3>피트 위스키</h3>
+                        <li>피트 위스키는 이탄 연기로 맥아를 말리는 과정에서 생기는 특유의 풍미를 가진 위스키입니다.</li>
+                        <li>피트 위스키의 가장 대표적인 특징은 훈제향입니다. 특히 아일라 섬에서 생산되는 피트 위스키는 진하고 독특한 훈제 향이 특징입니다.</li>
+                        <li>훈제 향과 함께 약재 향이 느껴지기도 합니다. 이는 피트에서 방출되는 화합물이 위스키에 이러한 향을 부여하기 때문입니다.</li>
+                        <li>일부 피트 위스키는 약품과 유사한 향을 가지기도 합니다. 이는 피트에서 나오는 페놀 화합물의 종류와 농도에 따라 달라집니다.</li>
+                        <li>위스키계의 민초라고 불릴 만큼 호불호가 강한 위스키입니다.</li>
+                    </ul>
+
+                    <ul>
+                        <h3>셰리 위스키</h3>
+                        <li>셰리 위스키는 셰리 와인을 담아뒀던 셰리 오크통에서 숙성한 위스키입니다.</li>
+                        <li>셰리 와인의 영향으로 위스키에 달콤하고 진득한 풍미가 더해집니다. </li>
+                        <li>셰리 오크통에서 숙성되는 동안 바닐라, 오렌지 껍질, 캐러멜 등의 향이 더해져 위스키의 향미를 풍부하게 만듭니다. </li>
+                        <li>셰리 와인의 종류에 따라 다양한 풍미가 나타날 수 있으며, 특히 말린 과일, 향신료, 탄닌 등의 풍미가 특징적입니다. </li>
+                        <li>셰리 오크통의 재질에 따라 바닐라, 토스트, 정향, 탄닌 등의 향이 추가되어 위스키의 맛을 더욱 풍부하게 만들어 줍니다. </li>
+                    </ul>
+                </p>
+                <br><br><br><br><br><br><br><br>
+            </div>  
+        </div>
+        <div class="rightcolum">
+            <div class="card">
+                <h2>오늘의 위스키</h2>
+                <div><img src="whisky4.jpeg"></div>
+                <p>글렌피딕 12년<br>판매량 1등 싱글몰트 위스키</p>
+                <p>글렌피딕 12년 위스키는 스코틀랜드 싱글 몰트 위스키의 대표적인 제품으로, 
+                    부드럽고 달콤한..</p>
+            </div>
+            <div class="card">
+                <h3>게시판 인기글</h3>
+                <div><p>위스키 입문 질문 있습니다.+5</p></div>
+                <div><p>이거 가격 괜찮은 가요?+10</p></div>
+                <div><p>요즘 가격이 슬슬 떨어지네요..+12</p></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Blog | Github
+        <br><br>
+        저자 : 이맹규
+        <br>
+        이메일 : lmgyu0522@naver.com
+        <br>
+        Copyright 2025. 이맹규 All rights reserved.
+    </div>
+</body>
+</html>

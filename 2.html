@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial;
+            padding: 10px;
+            background-image: url(bg.jpeg);
+        }
+
+        .header{
+            padding: 30px;
+            text-align: center;
+            background-image: url(bg2.jpeg);
+        }
+
+        .header h1{
+            font-size: 50px;
+        }
+
+        .topnav{
+            overflow: hidden;
+            background-color: #333;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .topnav a{
+            
+            display: inline-block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover{   
+            background-color: #ddd;
+            color: black;
+        }
+
+        .leftcolum{
+            float: left;
+            width: 75%;
+        }
+
+        .rightcolum{
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+
+        .card{
+            padding: 20px;
+            margin-top: 20px;
+            border: solid 1px black;
+            img{
+                width: 80%;
+                border: solid 1px black;
+            }
+            background-image: url(bg2.jpeg);
+        }
+        .main_card{
+            padding: 20px;
+            margin-top: 20px;
+            border: solid 1px black;
+            img{
+                width: 80%;
+            }
+            background-image: url(bg2.jpeg);
+        }
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .footer{
+            padding: 20px;
+            text-align: left;
+            margin-top: 20px;
+            background-image: url(bg2.jpeg);
+            font-size: 12px;
+            color: #888888;
+        }
+
+        @media screen and (max-width: 800px) {
+            .leftcolum, .rightcolum{
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .topnav a{
+                float: none;
+                width: 100%;
+            }
+        }
+
+        .main img{
+            margin: 10px;
+            width: 225px;
+            height: 225px;
+            background-color: #ddd;
+            border: solid 1px black;
+            border-radius: 5px;
+        }
+
+        .main{
+            display: flex;
+            align-items:top;
+            margin: 10px;
+            padding: 10px;
+            border: solid 1px black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="whisky.png">
+        <p>위스키 입문자를 위한 간단한 소개 페이지</p>
+    </div>
+
+    <div class="topnav">
+        <a href="index.html">홈으로</a>
+        <a href="1.html">테이스팅 노트</a>
+        <a href="2.html">소개</a>
+        <a href="3.html">브랜드</a>
+        <a href="4.html">페어링</a>
+        <a href="5.html">게시판</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolum">
+            <div class="main_card">
+                <h2>위스키 소개</h2>
+                <p>테이스팅 노트에 있는 3가지 카테고리의 위스키들 중에서 제가 좋아하는 위스키를 각각 소개해 보도록 하겠습니다.</p>
+                <h2>와일드터키 레어브리드</h2>
+                <div class="main">
+                    <img src="whisky12.jpeg">
+                    <p>버번 위스키 중에서는 와일드터키 레어브리드를 제일 좋아합니다.
+                        이 위스키는 도수가 58.4%로 높은 편입니다. 와일드 터키 6년, 8년, 12년 숙성된 
+                        원액을 블렌딩하여 물로 희석하지 않은 배럴 프루프(Barrel Proof) 방식으로 만들어집니다. 
+                        향을 맡았을 때에는 카라멜 향, 바닐라 등 달달한 향이 나고 마셨을 때에는 도수감에서 오는 
+                        강렬한 타격감이 있지만 부드럽고 맡았던 향들이 직관적으로 맛으로 나타나서 맛있게 마셨던
+                        술입니다.
+                    </p>
+                </div>
+
+                <h2>라프로익</h2>
+                <div class="main">
+                    <img src="whisky2.jpeg">
+                    <p>피트 위스키 중에서는 라프로익을 제일 좋아합니다.
+                        이 위스키는 아일라 싱글몰트 특유의 훈연과 바다 향이 치고 들어오는데, 퍼진다기보다는 터진다는 
+                        느낌에 가깝기 때문이다. 숯, 연기, 타르, 감초가 뒤섞인 훈연향에 바다 향이 섞이면서 젖은 흙과 
+                        나무를 연상시키는 복잡한 노트들이 한꺼번에 치고 올라온다. 라프로익의 해외의 리뷰만 뒤져봐도 온갖 
+                        나무 이름을 다 배우게 된다. 이 뒤에 곧장 토피, 바닐라, 초콜릿, 군밤 같은 옅은 달콤함과 고소함이 
+                        섞인 노트가 따라온다. 이렇게 맛이 풍부하고 기름진데도 긴 여운이 남지 않고 끝나버린다. 이 때문에 
+                        대중적인 위스키를 마시던 사람은 라프로익을 처음 마시게 되면 '이게 도대체 뭐지?' 하는 생각이 든다. 
+                        호불호가 갈리는 이유이다. 광고 문구도 이를 반영하듯, 'Laphroaig—love it or hate it, there's no in between'이다.
+                        호불호가 심하다해서 궁금한 마음에 처음 사서 마셔본 술인데 극호였던 술입니다.
+                    </p>
+                </div>
+
+                <h2>글렌알라키</h2>
+                <div class="main">
+                    <img src="whisky14.jpeg">
+                    <p>셰리 위스키 중에서는 카발란을 좋아합니다.
+                        이 위스키는 와인을 숙성했던 아메리칸 오크에서 숙성하여 진한 과일 풍미가 강조된 제품입니다. 코 끝에는 강렬하고
+                        농축된 과일 향이 퍼지며, 공기와 접촉할수록 다채로운 아로마가 피어오릅니다. 입 안에서는 달콤한 열대과일의 풍미가
+                        느껴지고 특히 은은하게 감도는 스파이시함이 입안을 가득 채우면 긴 여운으로 마무리 됩니다. 싱글 캐스크 스트렝스
+                        제품이라 도수는 높지만 특유의 알코올 치는 느낌이 없이 부드럽고 달달하고 진득한 느낌으로 셰리를 좋아하는 편은
+                        아니지만 맛있게 마셨던 술이었습니다.
+                        
+                    </p>
+                </div>
+            </div>  
+        </div>
+        <div class="rightcolum">
+            <div class="card">
+                <h2>오늘의 위스키</h2>
+                <div><img src="whisky4.jpeg"></div>
+                <p>글렌피딕 12년<br>판매량 1등 싱글몰트 위스키</p>
+                <p>글렌피딕 12년 위스키는 스코틀랜드 싱글 몰트 위스키의 대표적인 제품으로, 
+                    부드럽고 달콤한..</p>
+            </div>
+            <div class="card">
+                <h3>게시판 인기글</h3>
+                <div><p>위스키 입문 질문 있습니다.+5</p></div>
+                <div><p>이거 가격 괜찮은 가요?+10</p></div>
+                <div><p>요즘 가격이 슬슬 떨어지네요..+12</p></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Blog | Github
+        <br><br>
+        저자 : 이맹규
+        <br>
+        이메일 : lmgyu0522@naver.com
+        <br>
+        Copyright 2025. 이맹규 All rights reserved.
+    </div>
+</body>
+</html>
